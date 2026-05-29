@@ -1,0 +1,59 @@
+{
+  "chainId": 421614,
+  "network": "Arbitrum Sepolia",
+  "deployedAt": "2026-05-27T17:18:00Z",
+  "deployer": "0x0CaEDdC94251F6Cf4E726eCB0A50C27f47738ce7",
+  "policyActive": "ThreePoolPolicy",
+  "contracts": {
+    "USDC": "0xa95b2e18Cabb46097Da0F19FDa919Dc947487822",
+    "ShareToken": "0xbA5BC302cDd203263b168f2F54fbf724a591f56d",
+    "SubscriptionManager": "0x44e4CA93C6c7a1DbAEf6CF73fdEdE84Be6be4978",
+    "RedemptionManager": "0x525d61cbF0BD47bd07588Cc7bf99526344C9f359",
+    "NAVOracle": "0x0A0C78F67977C0A0AB711D03Aa343622Bd1D0f63",
+    "AllocationManager": "0x04D0475b02Afd23DD7D5b036a9e863162c0c34B0",
+    "DividendManager": "0x60dAA71A775aF9c757a22392E884734bC39dBcB1",
+    "ReserveFund": "0xEdE7552aB7A771Cdb46ce45dE2624443FB10995E",
+    "FundVault": "0x6c4269Dd0B19082A5D9Ce98C4803bD6f6502D4D4",
+    "EmergencyController": "0xe3A9B9A7A1b15fd8b9FB835E56EB78f618a868Ca",
+    "KYCRegistry": "0x8Ea48Fce1aDF4121881C330F85dc10a88937351C",
+    "DailyTick": "0xE09ed75E8259FEdcDAe6a1112bBbeD45b7C2Cd7b",
+    "FundMultisig": "0x2CDf6Fc04f75BCF408c9654BDBCDB42B7272f27A",
+    "ThreePoolPolicy": "0xc835Eedf3Eb527dd4854612d95fa0AE0A3a7B253",
+    "KellyPolicy": "0x73c5609f39A04E5DBE811eE7f635D359971bC4be",
+    "MockStrategy": "0x61279F5213A19F2d84CD819549476D470c982f1C"
+  },
+  "params": {
+    "minSubscriptionUSDC": "1000000000",
+    "lockupSecs": 2592000,
+    "navOracleThreshold": 2,
+    "navMaxDeviationBps": 2000,
+    "feeTiers": [
+      { "maxDays": 89, "bps": 200 },
+      { "maxDays": 179, "bps": 100 },
+      { "maxDays": 4294967295, "bps": 0 }
+    ],
+    "threePool": {
+      "fixedYieldBpsYear": 600,
+      "floatBps": 3000,
+      "toNAVBps": 6000,
+      "reserveInjectBps": 1000,
+      "reserveCapBps": 2500,
+      "reserveFloorBps": 500
+    },
+    "kelly": {
+      "kellyFractionBps": 2500,
+      "reserveInjectBps": 1500,
+      "toNAVBps": 6000,
+      "reserveCapBps": 2500,
+      "reserveFloorBps": 500
+    },
+    "multisig": {
+      "threshold": 2,
+      "owners": [
+        "0x0CaEDdC94251F6Cf4E726eCB0A50C27f47738ce7",
+        "0xAa10F25C0A4C2eaA0E3da39C7dcd68B4Dd7E0001",
+        "0xAa20f25c0a4c2eAA0e3dA39c7DCD68B4Dd7e0002"
+      ]
+    }
+  }
+}
