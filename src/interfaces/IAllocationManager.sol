@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BUSL-1.1
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.24;
 
 /// @title IAllocationManager — 多策略权重与再平衡

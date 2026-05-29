@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BUSL-1.1
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.24;
 
 /// @title IKYCRegistry — 地址白名单 + 地域代码

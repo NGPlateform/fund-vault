@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BUSL-1.1
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.24;
 
 /// @title MerkleRoots — Merkle proof 校验（OpenZeppelin 同款实现的最小子集）
